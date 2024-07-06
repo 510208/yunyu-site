@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  font-family: "Noto Sans TC", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: black;
+  background-color: whitesmoke;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.bouncing-blob {
+  width: 32vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+}
+
+.bouncing-blob--green {
+  background: #ade9a1;
+}
+
+.bouncing-blob--blue {
+  background: #b3ce74;
+}
+
+.bouncing-blob--white {
+  background: #ffffff;
+  z-index: 2;
+  width: 15vw;
+}
+
+.bouncing-blob--purple {
+  background: #a697c2;
+}
+
+.bouncing-blob--pink {
+  background: #6c99d450;
+}
+
+.bouncing-blobs-container {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bouncing-blobs-glass {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(140px);
+  -webkit-backdrop-filter: blur(140px);
+  pointer-events: none;
+}
+
+.bouncing-blobs {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 0;
+}
+
+div.center {
+  font-size: 40px;
+  max-width: 100vw;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: #524d4d;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .bouncing-blobs-glass {
+    backdrop-filter: blur(120px);
+    -webkit-backdrop-filter: blur(120px);
+  }
+}
+
+@media (max-width: 500px) {
+  .bouncing-blob {
+    width: 60vw;
+  }
+  .bouncing-blob--white {
+    width: 30vw;
+  }
+  .bouncing-blobs-glass {
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+  }
+}
+  
+@media(max-width: 500px) {
+  .tutorial-link a {
+    font-size: 14px;
+    padding: 2px 4px;
+  }
+  .tutorial-link svg {
+    width: 15px;
+  }
+}
+
+.buttons {
+  display: inline-block;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #978f8f;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #978f8f;
+  transition: background-color 0.3s, color 0s;
+  cursor: pointer;
+}
+
+.btn-black a {
+  background-color: #000000;
+  color: white;
+  border-color: black;
+}
+
+.buttons a:hover {
+  background-color: #978f8f;
+  color: white;
+  /* 過度效果 */
+  transition: background-color 0.3s, color 0s;
+}
+
+.buttons a:hover {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+
+.material-symbols-rounded {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#shell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  min-width: 500px;
+  /* min-height: 50vh; */
+}
+
+h1 {
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.nunito {
+  font-family: 'Nunito', 'Noto Sans TC', sans-serif;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 500px) {
+  .nunito {
+    font-size: 80px;
+  }
+}
+
+code {
+  font-family: "Source Code Pro", "Noto Sans TC", monospace;
+  color: #978f8f !important;
+}
+
+.starstyle {
+  margin: 0;
+  font-size: 30px;
+}
+
+.starstyle::before {
+  content: '/*';
+  margin-right: 5px;
+  padding-right: 10px;
+}
+
+.starstyle::after {
+  content: '*/';
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+.shell {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.shell pre code {
+  font-size: 20px;
+  line-height: 1.5;
+  color: white !important;
+  background-color: #021123;
+  max-width: 1500px;
+  min-width: 400px;
+  width: 900px;
+  display: flex;
+  padding: 20px;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.shell pre, .shell pre code {
+  margin-bottom: 0;
+  border-radius: 15px 15px 0 0;
+}
+
+strong {
+  font-weight: 900;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 5px;
+}
+
+.gradiant-blue {
+  background-image: linear-gradient(120deg, #5486d6 0%, #d6edf8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradiant-purple {
+  background-image: linear-gradient(90deg,#51d146 24%,#4885ef);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradiant-yellow {
+  background-image: linear-gradient(-20deg, #fffed5 0%, #faff65 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradiant-red {
+  background-image: linear-gradient(120deg, #f43b47 0%, #453a94 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.blank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+section {
+  margin-bottom: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.feature {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.feature:hover {
+  box-shadow: rgba(149, 157, 165, 0.55) 0px 8px 24px;
+  transition: box-shadow 0.3s;
+}
+
+.feature h2 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+img[alt="github screen"] {
+  transition: border-radius 0.3s;
+  object-fit: cover;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 15px;
+}
+
+img[alt="github screen"]:hover {
+  border-radius: 30px;
+  transition: border-radius 0.3s;
+}
+
+.countrs a img {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.countrs a img:hover {
+  transform: translate(0, -10px);
+  transition-delay: 0s !important;
+}

@@ -1,0 +1,178 @@
+<html>
+<head>
+    <title>SamHacker設計</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"></head>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<body>
+    <div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+        <div class="bouncing-blobs">
+            <div class="bouncing-blob bouncing-blob--green" style="top: 24.1194px; left: 203.476px; transform: translate(121.989px, 131.588px);"></div>
+            <div class="bouncing-blob bouncing-blob--green" style="top: 167.258px; left: 1276.69px; transform: translate(-983.131px, -73.8218px);"></div>
+            <div class="bouncing-blob bouncing-blob--green" style="top: 55.7684px; left: 517.936px; transform: translate(-361.263px, 184.088px);"></div>
+            <div class="bouncing-blob bouncing-blob--white" style="top: 152.083px; left: 1354.16px; transform: translate(-1121.64px, 378.329px);"></div>
+            <div class="bouncing-blob bouncing-blob--purple" style="top: 154.837px; left: 156.685px; transform: translate(63.0074px, 49.634px);"></div>
+            <div class="bouncing-blob bouncing-blob--blue" style="top: 94.289px; left: 679.534px; transform: translate(-296.067px, 128.738px);"></div>
+            <div class="bouncing-blob bouncing-blob--pink" style="top: 69.2556px; left: 1139.57px; transform: translate(-945.042px, 49.2531px);"></div>
+        </div>
+    </div>
+    <section id="main">
+        <div class="blank"></div>
+        <div class="col center">
+            <h1 class="nunito">一個<strong class="gradiant-blue">簡潔、輕量、開源</strong>的機器人</h1>
+            <p><code class="past-title starstyle" id="dcbot-text">一套擁有完整功能的 Discord Bot</code></p>
+            <div class="buttons">
+                <a href="https://github.com/510208/yunyubot-dc-annou/releases/latest/">立即下載！ <i class="bi bi-arrow-down"></i></a>
+                <a href="https://github.com/510208/yunyubot-dc-annou/"><i class="bi bi-github"></i></a>
+                <a href="https://github.com/510208/yunyubot-dc-annou/blob/main/CONTRIBUTING.md"><i class="bi bi-book"></i></a>
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div class="shell">
+            <pre><code id="bash"></code></pre>
+        </div>
+    </section>
+    <section id="feature">
+        <div class="col center">
+            <h1 class="nunito">為什麼我們<strong class="gradiant-yellow">這麼好用？</strong></h1>
+            <p style="font-size: 30px;">想要知道為什麼你該選這個機器人，而不是其他的框架、或自己寫一個嗎？</p>
+            <div class="blank" style="height: 50px;"></div>
+            <div class="content grid">
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-wrench" viewBox="0 0 16 16">
+                        <path d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11z"/>
+                    </svg>
+                    <h2>簡單 易用</h2>
+                    <p>本機器人採用大受好評的 Python 與 Discord.py，讓你可以不必擔心程式碼的錯誤</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-body-text" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 0 .5m0 2A.5.5 0 0 1 .5 2h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m9 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-9 2A.5.5 0 0 1 .5 4h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m7 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-12 2A.5.5 0 0 1 .5 6h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m8 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-8 2A.5.5 0 0 1 .5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m7 0a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-7 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    <h2>方便 快速</h2>
+                    <p>機器人的 YAML 配置文件，讓你不用打開原始碼，而是著重在完善自己的社群！</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
+                        <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+                    </svg>
+                    <h2>開源 自由</h2>
+                    <p>本機器人的原始碼完全開源，你可以自由地修改、發布，而不用擔心任何法律問題！</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                    </svg>
+                    <h2>長久 維護</h2>
+                    <p>遇到問題了嗎？前往 GitHub 儲存庫，你可以在那裡發問，甚至幫助我們！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="install">
+        <div class="col center">
+            <h1 class="nunito"><strong class="gradiant-purple">安裝</strong>，僅此而已</h1>
+            <p style="font-size: 30px;">立即加入使用本機器人的行列吧！</p>
+            <div class="blank" style="height: 50px;"></div>
+            <div class="content grid">
+                <div class="feature">
+                    <i class="bi bi-cloud-download"></i>
+                    <h2>下載</h2>
+                    <p>從我們的GitHub頁面下載最新版本的機器人</p>
+                </div>
+                <div class="feature">
+                    <i class="bi bi-gear"></i>
+                    <h2>設定</h2>
+                    <p>設定機器人的設定檔，以及其他設定</p>
+                </div>
+                <div class="feature">
+                    <i class="bi bi-play"></i>
+                    <h2>啟動</h2>
+                    <p>執行機器人，並開始使用</p>
+                </div>
+                <div class="feature">
+                    <i class="bi bi-emoji-smile"></i>
+                    <h2>享受</h2>
+                    <p>享受使用機器人的樂趣</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="perfect">
+        <div class="col center">
+            <h1 class="nunito">我們希望它可以更加<strong class="gradiant-red">完美</strong>！</h1>
+            <p style="font-size: 30px;">願意協助我們的開發嗎？加入我們吧！</p>
+            <div class="buttons btn-black">
+                <a href="https://github.com/510208/yunyubot-dc-annou/issues">有什麼問題嗎 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/510208/yunyubot-dc-annou/">給我們一顆星 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                        <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/510208/yunyubot-dc-annou/blob/main/CONTRIBUTING.md">協助我們開發 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16">
+                        <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="blank" style="height: 50px;"></div>
+            <img src="resources/github.jpg" alt="github screen">
+        </div>
+    </section>
+    <section id="users">
+        <div class="col center">
+            <h1 class="nunito">感謝這些人<strong class="gradiant-red">幫助我們</strong>！</h1>
+            <p style="font-size: 30px;">願意協助我們的開發嗎？加入我們吧！</p>
+            <div class="countrs">
+                <a href="https://discord.gg/CfGvx3NQWZ"><img src="resources/cloudfeather.png" height="100px"></a>
+                <a href="https://host.asteroid.tw/"><img src="resources/asteroid.png" height="100px"></a>
+                <a href="https://samhacker.is-from.tw/"><img src="resources/samhacker.svg" height="100px"></a>
+            </div>
+        </div>
+    </section>
+    <!-- 一個置底的Container，顯示像機器人啟動時終端機顯示的訊息般的特效 -->
+    <script>
+        var typed = new Typed('#dcbot-text', {
+            strings: ["CloudFeather Announcement Bot", "一套擁有完整功能的 Discord Bot","由SamHacker開發","而且...  它是開源的！","準備好了嗎？"],
+            typeSpeed: 100,
+            backSpeed: 30,
+            loop: true,
+            showCursor: false
+        });
+    </script>
+    <script>
+        var shell = document.getElementById('bash');
+        var messages = [
+            "228: [2024-06-29 21:16:46,384][INFO] - [main] 載入annou_stat.py中...\n",
+            "230: [2024-06-29 21:16:46,415][INFO] - [main] 載入annou_stat.py成功\n",
+            "237: [2024-06-29 21:16:46,416][INFO] - [main] 跳過nlfile.py, 原因：採用nl方式跳過載入\n",
+            "239: [2024-06-29 21:16:46,416][INFO] - [main] 跳過__pycache__\n",
+            "603: [2024-06-29 21:16:46,417][INFO] - [client] logging in using static token\n",
+            "561: [2024-06-29 21:16:48,248][INFO] - [gateway] Shard ID None has connected to Gateway (Session ID: samhacker).\n",
+            "28: [2024-06-29 21:16:50,347][INFO] - [main] Logged in as (機器人名稱)#(機器人編號) (ID: 機器人ID)"
+        ];
+        var i = 0;
+        setInterval(function() {
+            shell.innerHTML += messages[i];
+            i++;
+            if (i == messages.length + 1) {
+                i = 0;
+                shell.innerHTML = "";
+                // 等待一段時間後清空
+                setTimeout(function() {
+                    shell.innerHTML = "";
+                }, 5000);
+            }
+        }, Math.random() * 1500);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
