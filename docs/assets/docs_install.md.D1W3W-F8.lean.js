@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as s,a2 as e}from"./chunks/framework.EZBTHm4D.js";const k=JSON.parse('{"title":"開始安裝","description":"","frontmatter":{},"headers":[],"relativePath":"docs/install.md","filePath":"docs/install.md"}'),i={name:"docs/install.md"},n=e("",12),o=[n];function l(p,r,h,d,c,u){return s(),t("div",null,o)}const b=a(i,[["render",l]]);export{k as __pageData,b as default};
